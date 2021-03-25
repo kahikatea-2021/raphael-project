@@ -12,8 +12,15 @@ function getFile(callback, filename = "to-do-list.json", error = console.error) 
   })
 }
 
-function writeFile() {
-  
+function writeFile(contents,callback,filename = "to-do-list.json", error = console.error) {
+  fs.writeFile(path.join(__dirname, filename), contents, "utf8",(err)=>{
+    if(err){
+      error(err.message)
+      callback(new Error("Unable to modify"))
+    }else {
+      callback(null,contents)
+    }
+  })
 }
 
 module.exports = {
