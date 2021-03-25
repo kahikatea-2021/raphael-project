@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
+    "dev": "nodemon index.js --ignore to-do-list.json",
     "build-css": "tailwindcss build ./styles.css -o public/tailwind.css",
     "test": "jest --watchAll --verbose"
   },
