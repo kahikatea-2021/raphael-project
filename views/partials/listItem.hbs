@@ -1,0 +1,13 @@
+
+<div class="text-lg" >
+  {{name}}
+</div>
+
+{{#each items}}
+<div class="mb-2" >
+    <input type="checkbox" id="{{itemId}}" name="{{itemId}}">
+    <label for="{{itemId}}">{{name}}</label>
+</div>
+{{/each}}
+
+
