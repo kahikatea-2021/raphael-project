@@ -9,12 +9,12 @@ const { addToDoList } = require('../controller/to-do-list-controller')
 router.post('/todoitems/:id/add', (req, res) => {
   const data = req.body
   const groupId = req.params.id
-  
+
   addToDoList(groupId, data, (err, contents) => {
     if (err) {
       res.status(500).send(err)
     } else {
-      
+      res.redirect('/')
     }
   })
 })
