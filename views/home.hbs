@@ -7,11 +7,17 @@
   </div>
 
 {{!-- Main body --}}
-  <div class="mt-4" >
+  <div>
     {{#each list}}
       {{> listItem}}
     {{/each}}
   </div>
+
+<form method="POST" action="/groups">
+  <input name="name" placeholder="Add new category">
+  <button>Submit</button>
+</form>
+
   <small class="text-left">Created by Team Raphael</small>
 </div>
 

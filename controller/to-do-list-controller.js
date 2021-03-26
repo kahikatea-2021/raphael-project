@@ -20,6 +20,7 @@ function addToDoList(groupId, data, callback) {
   groupId = Number(groupId)
   getFile( (err, contents) => {
     if (err) {
+
       callback(err.message)
     } else {
       try {
