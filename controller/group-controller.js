@@ -10,6 +10,7 @@ function addGroup(data, callback) {
         const list = parsedData.data
         var newId = list[list.length-1].listId + 1
         data['listId'] = newId
+        data['items'] = []
         list.push(data)
         const dataToSave = {
           data: list
