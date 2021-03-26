@@ -6,13 +6,13 @@
 {{#each items}}
 <div>
     <input type="checkbox" id="{{itemId}}" name="{{itemId}}">
-    <label for="{{itemId}}">{{name}}</label>
+    <label class="ml-2 text-gray-700" for="{{itemId}}">{{name}}</label>
 </div>
 {{/each}}
 
 <form method="POST" action="/todoitems/{{listId}}/add">
   <input name="name" placeholder="Add new item">
-  <button>Submit</button>
+  <button class="rounded border-2 px-2 text-gray-700" >+</button>
 </form>
 
 
