@@ -10,8 +10,17 @@
 
 {{#each items}}
 <div>
-    <input type="checkbox" id="{{itemId}}" name="{{itemId}}">
-    <label class="ml-2 text-gray-700" for="{{itemId}}">{{name}}</label>
+  <form method="POST" action="/todoitems/{{ownerId}}/edit">
+  {{#if complete}}
+    <input disabled type="checkbox" checked>
+    {{else}}
+    <input disabled type="checkbox">
+    {{/if}}
+  <input name="itemId" hidden value="{{itemId}}">
+  <input name="complete" hidden value="{{complete}}">
+
+    <button class="ml-2 text-gray-700" for="{{itemId}}">{{name}}</button>
+    </form>
 </div>
 {{/each}}
 
