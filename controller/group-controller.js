@@ -1,7 +1,6 @@
 const { writeFile, getFile } = require("../fsService");
 
 function addGroup(data, callback) {
-  
   getFile((err, contents) => {
     if (err) {
       callback(err.message)
