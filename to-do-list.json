@@ -5,6 +5,7 @@
       "name": "Morning",
       "items": [
         {
+          "ownerId": 1,
           "itemId": 1,
           "name": "Eat Breakfast",
           "complete": false
@@ -16,6 +17,7 @@
       "name": "Afternoon",
       "items": [
         {
+          "ownerId": 2,
           "itemId": 1,
           "name": "Go for a swim",
           "complete": false
