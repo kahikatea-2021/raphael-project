@@ -30,16 +30,11 @@ function itemStatus(groupId, data, callback) {
         if (group.listId === groupId) {
           const items = group.items
 
-          items.find(item=>{
-            console.log(itemId)
-            if(item.itemId === itemId){
-            console.log(itemId)
-            console.log('found')
-
-              console.log(complete)
+          items.find(item => {
+            if (item.itemId === itemId) {
               item.complete = complete === 'false' ? true : false
               return true
-            } 
+            }
             return false
           })
           return true

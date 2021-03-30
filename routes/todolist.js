@@ -19,15 +19,14 @@ router.post('/todoitems/:id/add', (req, res) => {
 })
 
 router.post('/todoitems/:id/edit', (req, res) => {
-  console.log(req.body)
   const groupId = req.params.id
-   itemStatus(groupId,req.body,(err) =>{
-     if (err) {
-       res.status(500).send(err)
-     } else {
-       res.redirect('/')
-     }
-   })
+  itemStatus(groupId, req.body, (err) => {
+    if (err) {
+      res.status(500).send(err)
+    } else {
+      res.redirect('/')
+    }
+  })
 
 
 
