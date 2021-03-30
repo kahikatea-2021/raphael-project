@@ -1,1 +1,41 @@
+<<<<<<< HEAD
 {"data":[{"listId":1,"name":"Morning","items":[{"itemId":1,"ownerId":1,"name":"Eat Breakfast","complete":false},{"name":"put on clothes","itemId":2,"complete":false,"ownerId":1},{"name":"Get ready","itemId":3,"complete":true,"ownerId":1}]},{"listId":2,"name":"Afternoon","items":[{"itemId":1,"ownerId":2,"name":"Go for a swim","complete":true},{"name":"helo","itemId":2,"complete":false,"ownerId":2},{"name":"kateti","itemId":3,"complete":false,"ownerId":2},{"name":"kkk","itemId":4,"complete":true,"ownerId":2},{"name":"Fresh Office","itemId":5,"complete":true,"ownerId":2}]}]}
+=======
+{
+  "data": [
+    {
+      "listId": 1,
+      "name": "Morning",
+      "items": [
+        {
+          "ownerId": 1,
+          "itemId": 1,
+          "name": "Eat Breakfast",
+          "complete": false
+        }
+      ]
+    },
+    {
+      "listId": 2,
+      "name": "Afternoon",
+      "items": [
+        {
+          "ownerId": 2,
+          "itemId": 1,
+          "name": "Go for a swim",
+          "complete": false
+        }
+      ]
+    },
+    {
+      "name": "Night",
+      "listId": 3,
+      "items": []
+    },
+    {
+      "name": "Tomorrow",
+      "listId": 4
+    }
+  ]
+}
+>>>>>>> 8ea66935dc9667a193c4c5a49fa255b6002f334c
